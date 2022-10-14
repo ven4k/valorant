@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Druk Wide';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../assets/fonts/DrukWideMedium.otf");
+}
+
+main{
+    width: 2660px;
+    height: 1350px;
+    padding-top: 120px;
+    position: relative;
+    background-image: url("../assets/png/background.png");
+    background-repeat: no-repeat;
+    background-color: rgb(255, 70, 86);
+    display: flex;
+    z-index: 1000;
+}
+main h2, span{
+    transform: rotate(90deg);
+    position: absolute;
+}
+main h2{
+    height: 94px;
+    font-size: 72px;
+}
+main span{
+    display: block;
+    width: 294px;
+    height: 31px;
+    font-size: 24px;
+}
+
+.agents{
+    margin-top: 400px;
+    margin-left: -218px;
+    letter-spacing: 12px;
+    width: 1015px;
+    height: 210px;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-size: 156px;
+    line-height: 204px;
+    transform: rotate(90deg);
+    font-family: 'Druk Wide';
+    text-align: center;
+}
+
+.phoenix, .jett, .sova{
+    width: 440px;
+    height: 990px;
+    margin-right: 144px;
+    border: 2px solid white;
+    background-color: #1F2326;
+    font-family: 'Druk Wide';
+
+}
+.phoenix img, .jett img, .sova img, .sage img{
+    width: 440px;
+    height: 990px;
+}
+.phoenix{
+    margin-left: -260px;
+}
+.phoenixName, .jettName, .sovaName{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #fff;
+}
+.phoenixCountry, .jettCountry, .sovaCountry, .sageCountry{
+    color: #FF4656;
+    margin-top: 184px;
+    margin-left: -80px;
+    line-height: 31px;
+    letter-spacing: 1.6px;
+}
+.sage{
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
+    width: 440px;
+    height: 990px;
+    font-family: 'Druk Wide';
+    outline: 2px solid #1F2326;
+}
+.phoenixName{
+    margin-top: 245px;
+    margin-left: -240px;
+    letter-spacing: 1.6px;
+}
+.jettName{
+    margin-left: -130px;
+    margin-top: 140px;
+}
+
+.sovaName{
+    margin-left: -140px;
+    margin-top: 145px;
+}
+
+.sageName{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px #000;
+    margin-left: -140px;
+    margin-top: 145px;
+}
+.characterSpells{
+    margin-top: -75px;
+    margin-left: 31px;
+    position: absolute;
+    width: 440px;
+    height: 110px;
+    background: #1F2326;
+    border: 2px solid white;
+    z-index: 100;
+}
+.sageSpells{
+    margin-top: -75px;
+    margin-left: 31px;
+    position: absolute;
+    width: 440px;
+    height: 110px;
+    background: #fff;
+    border: 2px solid #1F2326;
+    z-index: 100;
+}

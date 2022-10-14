@@ -1,0 +1,63 @@
+body{
+  background-color: #E5E5E5;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.contentWrapper {
+  position: relative;
+  padding: 300px 218px 300px 218px;
+  margin: 0 auto;
+  width: 2660px;
+  height: 1764px;
+  border: 2px solid red;
+  background-color: #1F2326;
+  overflow: hidden;
+  z-index: 0;
+}
+.bigRedRadius{
+  position: absolute;
+  border-radius: 50%;
+  width: 2215px;
+  height: 2216px;
+  background-color: #FF4656;
+  z-index: 1;
+  left: -250px;
+  top: -711px;
+}
+.smallGreyRadius{
+  position: absolute;
+  width: 63px;
+  height: 63px;
+  left: 112px;
+  top: 2082px;
+  background-color: #505155;
+  border-radius: 50%;
+}
+.mediumGreyRadius{
+  position: absolute;
+  width: 98px;
+  height: 98px;
+  left: 2946px;
+  top: 475px;
+  background-color: #505155;
+  border-radius: 50%;
+}
+.bigWhiteRadius{
+  position: absolute;
+  width: 470px;
+  height: 470px;
+  left: 177px;
+  top: 2114px;
+  background: #EFEFEF;
+  border-radius: 50%;
+}
+.mediumWhiteRadius{
+  position: absolute;
+  width: 268px;
+  height: 269px;
+  left: 2727px;
+  top: 182px;
+  background: #EFEFEF;
+  border-radius: 50%;
+}

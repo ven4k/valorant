@@ -1,0 +1,107 @@
+
+header {
+    position: relative;
+    width: 2660px;
+    height: 132px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #1F2320;
+    font-weight: 700;
+    font-family: 'Montserrat';
+    border-radius: 10px 10px 0 0;
+    z-index: 1000;
+}
+
+.headerList {
+    margin-left: 86px;
+    display: flex;
+    color: #fff;
+}
+
+.headerList div {
+    margin: 50px;
+}
+
+.headerList label {
+    margin-right: 13px;
+}
+
+.headerList div:hover, label:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.headerListNews, .headerListPatchNotes, .headerListEsports {
+    margin-left: 15px;
+}
+
+.headerListDiscover {
+    margin-left: 20px;
+}
+
+.headerListUniverse {
+    margin-left: 36px;
+}
+
+.headerListShop, .headerListSupport {
+    margin-left: 28px;
+}
+
+.logo1 {
+    flex-direction: column;
+    margin-left: 73px;
+    color: #fff;
+    display: flex;
+    height: 40px;
+}
+
+.logo1 h2 {
+    margin: 0 0 0 6px;
+    font-size: 20px;
+    letter-spacing: 6px;
+}
+
+.logo1 p {
+    margin: 0 0 0 6px;
+    font-size: 10px;
+    letter-spacing: 6px;
+}
+
+.line {
+    margin-left: 60px;
+    border-left: 2px solid white;
+    height: 42px;
+}
+
+.logo2 {
+    margin-left: 60px;
+    align-self: center;
+}
+
+.logo2 img {
+    width: 48px;
+    height: 40px;
+}
+
+.login {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14px;
+    margin-right: 74px;;
+}
+
+.loginAvatar {
+    position: relative;
+    right: 0;
+
+}
+
+.loginName {
+    margin-left: 1rem;
+    margin-right: 18px;
+    color: white;
+}
