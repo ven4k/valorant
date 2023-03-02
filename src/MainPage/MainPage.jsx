@@ -35,19 +35,19 @@ export const MainPage = () => {
                 <div className={styles.agents}>AGENTS</div>
                 <AgentItem agent='phoenix' agentBlock={styles.phoenix} agentName={styles.phoenixName} agentCountry={styles.phoenixCountry} agentCountryName='United Kingdom'
                     agentImage={phoenix} agentSpells={styles.characterSpells} agentFirstSpell={firstPhoenixAbility} agentSecondSpell={secondPhoenixAbility}
-                    agentThirdSpell={thirdPhoenixAbility} agentFourthSpell={fourthPhoenixAbility}
+                    agentThirdSpell={thirdPhoenixAbility} agentFourthSpell={fourthPhoenixAbility} agentImageBlock={styles.agentImageBlock}
                 />
                 <AgentItem agent='jett' agentBlock={styles.jett} agentName={styles.jettName} agentCountry={styles.jettCountry} agentCountryName='South Korea'
                     agentImage={jett} agentSpells={styles.characterSpells} agentFirstSpell={firstJettAbility} agentSecondSpell={secondJettAbility}
-                    agentThirdSpell={thirdJettAbility} agentFourthSpell={fourthJettAbility}
+                    agentThirdSpell={thirdJettAbility} agentFourthSpell={fourthJettAbility}  agentImageBlock={styles.agentImageBlock}
                 />
                 <AgentItem agent='sova' agentBlock={styles.sova} agentName={styles.sovaName} agentCountry={styles.sovaCountry} agentCountryName='Russia'
                     agentImage={sova} agentSpells={styles.characterSpells} agentFirstSpell={firstSovaAbility} agentSecondSpell={secondSovaAbility}
-                    agentThirdSpell={thirdSovaAbility} agentFourthSpell={fourthSovaAbility}
+                    agentThirdSpell={thirdSovaAbility} agentFourthSpell={fourthSovaAbility}  agentImageBlock={styles.agentImageBlock}
                 />
                 <AgentItem agent='sage' agentBlock={styles.sage} agentName={styles.sageName} agentCountry={styles.sageCountry} agentCountryName='China'
                     agentImage={sage} agentSpells={styles.characterSpells} agentFirstSpell={firstSageAbility} agentSecondSpell={secondSageAbility}
-                    agentThirdSpell={thirdSageAbility} agentFourthSpell={fourthSageAbility} sageSpells={styles.sageSpells} sage
+                    agentThirdSpell={thirdSageAbility} agentFourthSpell={fourthSageAbility} sageSpells={styles.sageSpells} sage sageBlock={styles.sageImageBlock}  agentImageBlock={styles.agentImageBlock}
                 />
             </section>
             <section className={styles.secondMainSection}>

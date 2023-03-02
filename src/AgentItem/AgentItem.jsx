@@ -1,5 +1,4 @@
 
-
 export const AgentItem = ({
     agent,
     agentBlock,
@@ -14,12 +13,15 @@ export const AgentItem = ({
     agentFourthSpell,
     sage,
     sageSpells,
+    sageBlock,
+    agentImageBlock,
+
 }) => {
     return (
         <div className={agentBlock}>
             <span className={agentCountry}>{agentCountryName}</span>
             <h2 className={agentName}>{agent.toUpperCase()}</h2>
-            <img src={agentImage} alt={agent} />
+            <div className={sage ? sageBlock : agentImageBlock}><img src={agentImage} alt={agent} /></div>
             <div className={agentSpells} id={sage && sageSpells}>
                 <div><img src={agentFirstSpell} alt={`${agent}firstSpell`} /></div>
                 <div><img src={agentSecondSpell} alt={`${agent}secondSpell`}/></div>

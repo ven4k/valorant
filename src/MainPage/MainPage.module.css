@@ -63,13 +63,19 @@ span {
 .phoenix,
 .jett,
 .sova {
+    position: relative;
     width: 440px;
     height: 990px;
     margin-right: 144px;
-    background-color: #1F2326;
     font-family: 'Druk Wide';
     z-index: 100;
+}
 
+.phoenix h2,
+.jett h2,
+.sova h2,
+.sage h2 {
+    z-index: 1000;
 }
 
 .phoenix img,
@@ -78,7 +84,36 @@ span {
 .sage img {
     width: 440px;
     height: 990px;
+    position: relative;
 }
+
+.agentImageBlock {
+    background-color: #1F2326;
+    clip-path: polygon(4% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 2%);
+}
+
+.sageImageBlock::before {
+    content: '';
+    width: 437px;
+    height: 987px;
+    display: block;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    background-color: #fff;
+}
+
+.sageImageBlock {
+    width: 440px;
+    height: 990px;
+    background: #1F2326;
+ 
+    position: relative;
+}
+.sageImageBlock, .sageImageBlock::before {
+    -webkit-clip-path: polygon(4% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 2%);
+    clip-path: polygon(4% 0, 100% 0, 100% 50%, 100% 100%, 0 100%, 0 2%);
+  }
 
 .phoenix {
     margin-left: -260px;
@@ -104,12 +139,10 @@ span {
 
 .sage {
     position: relative;
-    z-index: 10;
-    background-color: #fff;
+    z-index: 1000;
     width: 440px;
     height: 990px;
     font-family: 'Druk Wide';
-    outline: 2px solid #1F2326;
 }
 
 .phoenixName {
@@ -172,9 +205,11 @@ span {
     position: absolute;
     z-index: 2;
 }
-.secondMainSection{
+
+.secondMainSection {
     position: relative;
 }
+
 .basic,
 .signature,
 .ultimate {
@@ -191,7 +226,9 @@ span {
 
 }
 
-.basic::before, .signature::before, .ultimate::before {
+.basic::before,
+.signature::before,
+.ultimate::before {
     content: '';
     width: 650px;
     background: white;
@@ -205,7 +242,9 @@ span {
 
 }
 
-.basic::after, .signature::after, .ultimate::after {
+.basic::after,
+.signature::after,
+.ultimate::after {
     content: '';
     position: absolute;
     top: 12px;
