@@ -1,13 +1,16 @@
 import styles from './Header.module.css';
-import logo from '../assets/png/Logo.png';
+import logo from '../assets/svg/logo.svg';
 import loginAvatar from '../assets/svg/akali.svg';
+import riotLogo from '../assets/svg/riotLogo.svg';
+import Polygon from '../assets/svg/Polygon.svg';
 
 export const Header = () => {
+
+    //т.к это просто вёрстка без функциона, потенциальные селекты, я заменил svg, чтобы не заморачиваться со стилями.
     return (
         <header>
             <div className={styles.logo1}>
-                <h2>RIOT</h2>
-                <p>GAMES</p>
+             <img src={riotLogo} alt='logo'/>
             </div>
             <div className={styles.line}></div>
             <div className={styles.logo2}>
@@ -18,16 +21,12 @@ export const Header = () => {
                 <div className={styles.headerListChampions}>CHAMPIONS</div>
                 <div className={styles.headerListNews}>
                     <label for={styles.selectHeaderListNews}>NEWS</label>
-                    <select id={styles.selectHeaderListNews}>
-                        <option></option>
-                    </select>
+                    <img className={styles.polygon} src={Polygon} alt='Polygon'/>
                 </div>
                 <div className={styles.headerListPatchNotes}>PATCH NOTES</div>
                 <div className={styles.headerListDiscover}>
                     <label for={styles.selectHeaderListDiscover}>DISCOVER</label>
-                    <select id={styles.selectHeaderListDiscover}>
-                        <option></option>
-                    </select>
+                    <img src={Polygon} className={styles.polygon} alt='Polygon'/>
                 </div>
                 <div className={styles.headerListEsports}>ESPORTS</div>
                 <div className={styles.headerListShop}>SHOP</div>
@@ -38,12 +37,10 @@ export const Header = () => {
                     <img src={loginAvatar} alt="loginAvatar"/>
                 </div>
                 <div className={styles.loginName}>
-                    ven4k
+                    UNEPICKID
                 </div>
                 <div>
-                    <select id={styles.selectLoginName}>
-                        <option></option>
-                    </select>
+                    <img className={styles.polygon} src={Polygon} alt='Polygon'/>
                 </div>
             </div>
         </header>

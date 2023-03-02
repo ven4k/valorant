@@ -1,0 +1,6 @@
+.shadowBox{
+    position: absolute;
+    background: #1F2326;
+    opacity: 0.5;
+    z-index: 0;
+}

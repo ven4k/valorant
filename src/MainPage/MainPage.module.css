@@ -5,7 +5,14 @@
     src: url("../assets/fonts/DrukWideMedium.otf");
 }
 
-main{
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../assets/fonts/Montserrat-Light.ttf")
+}
+
+main {
     width: 2660px;
     height: 1350px;
     padding-top: 120px;
@@ -13,25 +20,32 @@ main{
     background-image: url("../assets/png/background.png");
     background-repeat: no-repeat;
     background-color: rgb(255, 70, 86);
-    display: flex;
     z-index: 1000;
 }
-main h2, span{
+
+.firstMainSection {
+    display: flex;
+}
+
+.firstMainSection h2,
+span {
     transform: rotate(90deg);
     position: absolute;
 }
-main h2{
+
+.firstMainSection h2 {
     height: 94px;
     font-size: 72px;
 }
-main span{
+
+.firstMainSection span {
     display: block;
     width: 294px;
     height: 31px;
     font-size: 24px;
 }
 
-.agents{
+.agents {
     margin-top: 400px;
     margin-left: -218px;
     letter-spacing: 12px;
@@ -46,34 +60,49 @@ main span{
     text-align: center;
 }
 
-.phoenix, .jett, .sova{
+.phoenix,
+.jett,
+.sova {
     width: 440px;
     height: 990px;
     margin-right: 144px;
-    border: 2px solid white;
     background-color: #1F2326;
     font-family: 'Druk Wide';
+    z-index: 100;
 
 }
-.phoenix img, .jett img, .sova img, .sage img{
+
+.phoenix img,
+.jett img,
+.sova img,
+.sage img {
     width: 440px;
     height: 990px;
 }
-.phoenix{
+
+.phoenix {
     margin-left: -260px;
 }
-.phoenixName, .jettName, .sovaName{
+
+.phoenixName,
+.jettName,
+.sovaName {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #fff;
 }
-.phoenixCountry, .jettCountry, .sovaCountry, .sageCountry{
+
+.phoenixCountry,
+.jettCountry,
+.sovaCountry,
+.sageCountry {
     color: #FF4656;
     margin-top: 184px;
     margin-left: -80px;
     line-height: 31px;
     letter-spacing: 1.6px;
 }
-.sage{
+
+.sage {
     position: relative;
     z-index: 10;
     background-color: #fff;
@@ -82,28 +111,34 @@ main span{
     font-family: 'Druk Wide';
     outline: 2px solid #1F2326;
 }
-.phoenixName{
+
+.phoenixName {
     margin-top: 245px;
     margin-left: -240px;
     letter-spacing: 1.6px;
 }
-.jettName{
+
+.jettName {
     margin-left: -130px;
     margin-top: 140px;
 }
 
-.sovaName{
+.sovaName {
     margin-left: -140px;
     margin-top: 145px;
 }
 
-.sageName{
+.sageName {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #000;
     margin-left: -140px;
     margin-top: 145px;
 }
-.characterSpells{
+
+.characterSpells {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-top: -75px;
     margin-left: 31px;
     position: absolute;
@@ -113,13 +148,185 @@ main span{
     border: 2px solid white;
     z-index: 100;
 }
-.sageSpells{
-    margin-top: -75px;
-    margin-left: 31px;
-    position: absolute;
-    width: 440px;
-    height: 110px;
+
+#sageSpells {
     background: #fff;
     border: 2px solid #1F2326;
-    z-index: 100;
+}
+
+.characterSpells img {
+    width: auto;
+    height: auto;
+}
+
+.spellClass {
+    position: relative;
+    left: -123px;
+    margin-top: 153px;
+    display: flex;
+}
+
+.spellClass img {
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+}
+.secondMainSection{
+    position: relative;
+}
+.basic,
+.signature,
+.ultimate {
+    position: relative;
+    width: 724px;
+    height: 248px;
+    box-sizing: border-box;
+    margin-right: 80px;
+    background: linear-gradient(125deg, transparent, transparent 50%, black 10px, black 11px, white 0%);
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    border-right: 2px solid black;
+    z-index: 5;
+
+}
+
+.basic::before, .signature::before, .ultimate::before {
+    content: '';
+    width: 650px;
+    background: white;
+    padding: 20px 50px 0 10px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    z-index: 1;
+
+}
+
+.basic::after, .signature::after, .ultimate::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 3px;
+    width: 637px;
+    height: 200px;
+    background: white;
+    padding: 20px 20px 20px 60px;
+    border: 2px solid black;
+    border-top: none;
+    z-index: -1;
+}
+
+
+.basic h3,
+.signature h3,
+.ultimate h3 {
+    margin: 31px 0 0 58px;
+    font-size: 40px;
+    color: #C4C4C4;
+    font-family: 'Druk Wide';
+    line-height: 52px;
+    height: 41px;
+}
+
+.basic h4,
+.signature h4,
+.ultimate h4 {
+    margin: 32px 0 0 58px;
+    height: 25px;
+    font-family: 'Druk Wide';
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.basic p,
+.signature p,
+.ultimate p {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #1F2326;
+    width: 315px;
+    margin: 31px 0 0 58px;
+}
+
+.basic img {
+    margin-top: 31px;
+    margin-right: 72px;
+}
+
+.signature img {
+    margin-top: 22px;
+    margin-right: 80px;
+}
+
+.ultimate img {
+    margin-top: 36px;
+    margin-right: 66px;
+}
+
+.redBox {
+    width: 190px;
+    height: 182px;
+    background: #FF4656;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 118px;
+}
+
+.whiteBox {
+    position: relative;
+    width: 219px;
+    height: 248px;
+    box-sizing: border-box;
+    margin-left: 24px;
+    background: linear-gradient(125deg, transparent, transparent 50%, black 10px, black 11px, white 0%);
+    background-size: 13px 13px;
+    background-repeat: no-repeat;
+    border-right: 2px solid black;
+    background-position-x: -4px;
+    z-index: 5;
+}
+
+.whiteBox::before {
+    content: '';
+    box-sizing: border-box;
+    background: white;
+    padding: 20px 50px 0 10px;
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    position: absolute;
+    top: 0;
+    right: -2px;
+    z-index: 1;
+    width: 211px;
+
+}
+
+.whiteBox::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 219px;
+    height: 236px;
+    right: -2px;
+    background: white;
+    padding: 20px 20px 20px 60px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-top: none;
+    z-index: -1;
+}
+
+
+.whiteLine {
+    width: 2660px;
+    height: 132px;
+    background: #F8F8F8;
+    margin-top: -52px;
+    border-radius: 0 0 10px 10px;
 }
